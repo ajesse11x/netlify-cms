@@ -10,7 +10,9 @@
     "watch": "webpack -w",
     "build": "cross-env NODE_ENV=production webpack",
     "build-preview": "cross-env NODE_ENV=production webpack-dev-server --open",
-    "develop": "webpack-dev-server --hot"
+    "develop": "webpack-dev-server --hot",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "netlify",
@@ -42,7 +44,8 @@
     "netlify-cms-widget-relation": "^2.0.5",
     "netlify-cms-widget-select": "^2.0.4",
     "netlify-cms-widget-string": "^2.0.4",
-    "netlify-cms-widget-text": "^2.0.5"
+    "netlify-cms-widget-text": "^2.0.5",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.2",
@@ -51,5 +54,6 @@
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
-  }
+  },
+  "snyk": true
 }
