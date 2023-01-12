@@ -26,7 +26,7 @@
     "gatsby-remark-prismjs": "next",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-json": "next",
-    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-remark": "5.25.1",
     "gatsby-transformer-yaml": "next",
     "lodash": "^4.17.10",
     "netlify-cms": "^2.0.11",
